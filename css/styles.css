@@ -1,12 +1,44 @@
+/*  #D1824D  #3D6249  #5C8469  #9DB5A2  #DDE6DB  */
+/*  #D68060  #32513C  #657B6C  #A2AFA6  #DEE3E0  */
+
 body {
-  background-color: #DDE6DB;
+  background-color: #DEE3E0;
 }
 
 hr {
 
-  border-color: #698C75;
+  border-color: #657B6C;
   border-style: none;
   border-top-style: dotted;
   border-width: 5px;
   width: 3.5%;
+}
+
+h1 {
+  color: #32513C;
+}
+
+h2 {
+  color: #32513C;
+}
+
+h3 {
+  color: #32513C;
+}
+
+h4 {
+  color: #32513C;
+  margin: 8px;
+}
+
+#name {
+  display: inline;
+}
+
+#pronouns {
+  display: inline;
+}
+
+#stars {
+  color: #D68060;
 }
