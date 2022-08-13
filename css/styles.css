@@ -93,7 +93,7 @@ body::-webkit-scrollbar {
 }
 
 .title {  /*  text over transparent image over bg  */
-  margin-top: 45px;
+  margin-top: 60px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -105,15 +105,39 @@ body::-webkit-scrollbar {
 .title h1 {
   margin: 0;
   font-family: 'Euphoria Script', cursive;
-  font-size: 96px;
+  font-size: 130px;
 }
 
 .title h2 {
   padding: 0;
   margin: 0;
-  font-size: 25px; /*  25px desired size, 16px == 100%, 25/16=1.562, 156.2%  */
+  font-size: 40px; /*  25px desired size, 16px == 100%, 25/16=1.562, 156.2%  */
   color: #C7D1CA;
   font-weight: lighter;
+}
+
+.profile p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pie {
+  --b: 9px;
+  /* change this to change the thickness of the circles */
+  display: inline-grid;
+  width: 120px;
+  aspect-ratio: 1;
+  /* so I only have to change one number if I want to change the size */
+  border-radius: 50%;
+  /* makes the shape a circle >50. 25 makes a rounded square */
+  background-image: conic-gradient(transparent var(--d), #32513C 0);
+  /* fills clockwise */
+  margin: 8px;
+  border-width: 10px;
+  border: #0b160c;
+  place-content: center;
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
 }
 
 .skills {
@@ -123,6 +147,7 @@ body::-webkit-scrollbar {
 .skills table {
   margin-left: auto;
   margin-right: auto;
+  font-size: larger;
 }
 
 .skills::-webkit-scrollbar {
@@ -142,29 +167,8 @@ body::-webkit-scrollbar {
   z-index: 5;
 }
 
-.pie {
-  --b:9px;  /* change this to change the thickness of the circles */
-  display: inline-grid;
-  width: 100px;
-  aspect-ratio: 1; /* so I only have to change one number if I want to change the size */
-  border-radius: 50%;  /* makes the shape a circle >50. 25 makes a rounded square */
-  background-image: conic-gradient(transparent var(--d), #32513C 0);  /* fills clockwise */
-  margin: 8px;
-  border-width: 10px;
-  border: #0b160c;
-  place-content: center;
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
-    mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
-}
-
 .contact-me p {
   display: inline;
-}
-
-.profile p {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 600px;
 }
 
 .bottom-container a {
