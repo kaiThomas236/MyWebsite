@@ -1,165 +1,95 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+
+
+
+
 <head>
   <meta charset="utf-8">
-  <title>Kai's Personal Site</title>
-  <link rel="stylesheet" href="css/styles.css">\
-
-  <!--  ICON?? -->
-
+  <title>Kai Thomas</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Lato&family=Lora&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- TODO: NAVIGATION BAR  -->
+  <div class="nav-bar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pages/qualifications.html">Qualifications</a></li>
+      <li><a href="pages/projects.html">Projects</a></li>
+      <li><a href="pages/interests.html">Personal Interests</a></li>
+    </ul>
+  </div>
+  
 
-  <h1 id="name">Kai Thomas </h1>
-  <h4 id="pronouns">(he/him)</h4>
-  <p><em>Computer Science Professional</em></p>
-  <p>I graduated from the University of Colorado at Boulder with a Bachelor's degree in Computer Science back in 2020. Since then I have worked in Support Engineer roles. I am now looking to move into more development related roles, to take advantage
-    of my degree and to build exciting things.</p>
-  <hr>
+  <div class="top-container">
+    <img id="filler-img" src="images/website-bg.png" alt=""> <!-- invisible -->
+    <div class="title">
+      <h1>I'm Kai</h1>
+      <h2>an engineer.</h2>
+    </div>
+  </div>
 
-  <h3>Qualifications</h3>
-  <p>
-  <dl>
 
-    <small>08/2016 - 05/2020</small><br>
-    <dt><strong><a href="https://www.colorado.edu/">University of Colorado at Boulder</a></strong></dt>
-    <dd>
-      Bachelor's in Computer Science <br>
-      Space Minor
-    </dd>
-    <br>
+  <div class="middle-container">
+    <div class="profile">
+      <h2>About Me</h2>
+      <p>I graduated from the University of Colorado at Boulder in 2020 with a Bachelor's in Computer Science. I'm a first generation college grad whose work ethic, drive, and passion are unparalleled. My greatest strength by far is my incredible capacity for learning and retention.</p>
+    </div>
+    <hr>
+    <div>
+      <h2>My Skills</h2>
+      <div class="skills">
+        <table> <!-- TODO: get this to wrap on smaller screens -->
+          
+          <tr>
+            <td><div class="pie" style="--d:10deg"></div></td>
+            <td><div class="pie" style="--d:30deg"></div></td>
+            <td><div class="pie" style="--d:75deg"></div></td>
+            <td><div class="pie" style="--d:100deg"></div></td>
+            <td><div class="pie" style="--d:145deg"></div></td>
+            <td><div class="pie" style="--d:215deg"></div></td>
+            
+          </tr>
 
-    <small>06/2020</small>
-    <dt><strong>Department of Defense</strong></dt>
-    <dd>IA Cyber Security Awareness Training Certificate</dd>
-    <br>
+          <tr>
+            <td>Python</td>
+            <td>HTML</td>
+            <td>SQL</td>
+            <td>CSS</td>
+            <td>GoLang</td>
+            <td>JS</td>
+            
+          </tr>
 
-    <small>08/2012 - 05/2016</small>
-    <dt><strong>Falcon High School</strong></dt>
-    <dd>High School Diploma</dd>
+        </table>
+        <br>
+      </div>
+    </div>
+    
 
-  </dl>
 
-  <hr>
-  <h3>Employment History</h3>
-
-  <table cellspacing="5">
-    <tr>
-      <!--Duco-->
-      <td><small>04/2021 - 07/2022&emsp;</small></td>
-      <td><strong>Customer Support Engineer at Duco Technology</strong></td>
-    </tr>
-    <tr>
-      <td>&emsp;</td>
-      <td>
-        &emsp;Acted as a cross functional, cross org, technical liaison, summarizing and recommending targeted solution options directly to clients.<br>
-        &emsp;Explored and analyzed the vast database in order to masterfully craft SQL queries for troubleshooting and auditing purposes.<br>
-        &emsp;Coordinated an interdepartmental team focused on improving monitoring and alerting in order to catch over 60 percent of critical incidents before clients.<br>
-        &emsp;Created beautiful and accessible data visualizations as part of the ongoing data warehouse project.<br>
-        &emsp;Regularly authored and edited both customer-facing and internal-facing documentation. Created and presented training materials for new joiners.<br>
-        &emsp;Awarded Employee of the Month in October 2021. Nominated many times.<br>
-        &emsp;Pursued growth and knowledge by partnering with a software engineer for weekly learning and coding sessions.
-      </td>
-    </tr>
-
-    <tr>
-      <!--IBM-->
-      <td><small>10/2020 - 03/2021&emsp;</small></td>
-      <td><strong>IT Enterprise Support Engineer at IBM</strong></td>
-    </tr>
-    <tr>
-      <td>&emsp;</td>
-      <td>
-        &emsp;Diagnosed, identified, and solved high severity software and system issues encompassing thirty applications across 70,000 globally distributed end users, vendors, and consultants.<br>
-        &emsp;Contributed to ongoing curriculum improvements and performed software and systems training sessions for new hires.
-      </td>
-    </tr>
-
-    <tr>
-      <!--PWR-->
-      <td><small>11/2016 - 11/2017&emsp;</small></td>
-      <td><strong>Student Assistant at University of Colorado at Boulder (Program for Writing and Rhetoric)</strong></td>
-    </tr>
-    <tr>
-      <td>&emsp;</td>
-      <td>&emsp;Responsible for a floating hardware service which included installation, maintenance, support, and ad hoc software customizations for professors, graduate students, and university staff.</td>
-    </tr>
-  </table>
-
-  <hr>
-  <h3>Skills</h3>
-
-  <table cellspacing="3">
-    <!--&#x2B50;-->
-    <tr>
-      <td>Python</td>
-      <td id="stars"><small>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</small></td>
-      <td>&emsp;</td>
-      <td>Panopticon</td>
-      <td><small>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</small></td>
-    </tr>
-
-    <tr>
-      <td>SQL</td>
-      <td><small>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</small></td>
-      <td>&emsp;</td>
-      <td>Jira</td>
-      <td><small>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</small></td>
-    </tr>
-
-    <tr>
-      <td>HTML</td>
-      <td><small>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</small></td>
-      <td>&emsp;</td>
-      <td>Kibana</td>
-      <td><small>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</small></td>
-    </tr>
-
-    <tr>
-      <td>CSS</td>
-      <td><small>&#x2B50;&#x2B50;</small></td>
-      <!--update this after the course-->
-      <td>&emsp;</td>
-      <td>Grafana</td>
-      <td><small>&#x2B50;&#x2B50;&#x2B50;</small></td>
-    </tr>
-
-    <tr>
-      <td>JS</td>
-      <td><small>&#x2B50;&#x2B50;</small></td>
-      <!--update this after the course-->
-      <td>&emsp;</td>
-      <td>iOS</td>
-      <td><small>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</small></td>
-    </tr>
-
-    <tr>
-      <td>Go</td>
-      <td><small>&#x2B50;&#x2B50;</small></td>
-      <td>&emsp;</td>
-      <td>Windows</td>
-      <td><small>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</small></td>
-    </tr>
-
-    <tr>
-      <td>C++</td>
-      <td><small>&#x2B50;&#x2B50;</small></td>
-      <td>&emsp;</td>
-      <td>Linux</td>
-      <td><small>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</small></td>
-    </tr>
-
-  </table>
-
-  <hr>
+    <hr>
+    <div class="contact-me">
+      <h2>Get in Touch</h2>
+      <p>I am open to full and part time remote work. Hybrid roles may be considered.</p>
+    </div>
+  </div>
   <br>
-  <a href="pages\interests.html">My Personal Interests</a>
-  <br>
-  <a href="pages\contact.html">Contact Me</a>
-  </p>
+  
+  <div class="bottom-container">
+    <a class="footer-link" href="mailto:kaithomas236@gmail.com">Email Me</a>
+    <a class="footer-link" href="https://linkedin.com/in/kai-thomas-ab37671a8">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/kaiThomas236">GitHub</a>
+    <p>© Kai Thomas</p>
+  </div>
 
 </body>
 

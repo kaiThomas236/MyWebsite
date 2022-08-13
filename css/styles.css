@@ -1,44 +1,191 @@
-/*  #D1824D  #3D6249  #5C8469  #9DB5A2  #DDE6DB  */
-/*  #D68060  #32513C  #657B6C  #A2AFA6  #DEE3E0  */
+/******************************THEME DETAILS******************************/
+
+/*  #DE7852  #0b160c  #32513C  #506f5a  #C7D1CA  #F0F2F1  */
+/*
+font-family: 'Euphoria Script', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Lora',serif;
+*/
+
+/******************************TAG SELECTORS******************************/
 
 body {
-  background-color: #DEE3E0;
+  background-color: #C7D1CA;
+  margin: 0;
+  font-family: 'Lora', serif;
+  text-align: center;
 }
+
+
 
 hr {
 
-  border-color: #657B6C;
+  border-color: #506f5a;
   border-style: none;
-  border-top-style: dotted;
-  border-width: 5px;
-  width: 3.5%;
+  border-top-style: solid;
+  border-width: 1px;
+  width: 5%;
 }
 
-h1 {
-  color: #32513C;
+h1 {font-family: 'Lato', sans-serif;}
+h2 {font-family: 'Lato', sans-serif; color: #32513C;}
+h3 {font-family: 'Lato', sans-serif; color: #32513C;}
+h4 {font-family: 'Lato', sans-serif; color: #506f5a;}
+h5 {font-family: 'Lato', sans-serif; color: #506f5a;}
+h6 {font-family: 'Lato', sans-serif; color: #506f5a;}
+
+
+/*****************************CLASS SELECTORS*****************************/
+
+body::-webkit-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: none;
 }
 
-h2 {
-  color: #32513C;
+.skills::-webkit-scrollbar {
+  width: 20px;
+  z-index: 5;
 }
 
-h3 {
-  color: #32513C;
+.skills::-webkit-scrollbar-track {
+  background-color: transparent;
+  z-index: 5;
 }
 
-h4 {
-  color: #32513C;
-  margin: 8px;
+.skills::-webkit-scrollbar-thumb {
+  background-color: #32513C;
+  border-radius: 20px;
+  border: 3px solid black;
+  z-index: 5;
 }
 
-#name {
+.nav-bar {
+  padding-top: 14px;
+  background-color: #0b160c;
+  height: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-bar li {
   display: inline;
 }
 
-#pronouns {
+.nav-bar a {
+  display: inline block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #C7D1CA;
+}
+
+.nav-bar a:hover {
+  background-color: #000;
+}
+
+.top-container {
+  background-image: url("../images/website-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+  height: 100%;
+  color: #C7D1CA;
+  text-shadow:
+      -1px -1px 0 #0b160c,
+      1px -1px 0 #0b160c,
+      -1px 1px 0 #0b160c,
+      1px 1px 0 #0b160c;
+  margin-bottom: 30px;
+}
+
+.title {  /*  text over transparent image over bg  */
+  margin-top: 45px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-height: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+.title h1 {
+  margin: 0;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 96px;
+}
+
+.title h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 25px; /*  25px desired size, 16px == 100%, 25/16=1.562, 156.2%  */
+  color: #C7D1CA;
+  font-weight: lighter;
+}
+
+.skills {
+  overflow-x: auto;
+}
+
+.skills table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pie {
+  --b:7px;
+  display: inline-grid;
+  width: 75px;
+  aspect-ratio: 1; /* so I only have to change one number if I want to change the size */
+  border-radius: 50%;  /* makes the shape a circle >50. 25 makes a rounded square */
+  background-image: conic-gradient(transparent var(--d), #32513C 0);  /* fills clockwise */
+  margin: 5px;
+  border-width: 10px;
+  border: #0b160c;
+  place-content: center;
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+    mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  text-shadow:
+      -1px -1px 0 #0b160c,
+      1px -1px 0 #0b160c,
+      -1px 1px 0 #0b160c,
+      1px 1px 0 #0b160c;
+}
+
+.contact-me p {
   display: inline;
 }
 
-#stars {
-  color: #D68060;
+.profile p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.bottom-container a {
+  color: #DE7852;
+}
+
+.bottom-container a:visited {
+  color: #506f5a;
+}
+
+
+/*******************************ID SELECTORS*******************************/
+
+
+#filler-img {  /*  transparent image counts as content so the div sizes to it. I could probably make this opaque and delete the bg, but I don't want to  */
+  z-index: 0;
+  vertical-align: top;
+  width: 100%;
+  visibility: hidden;
+
 }
