@@ -43,23 +43,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.skills::-webkit-scrollbar {
-  width: 20px;
-  z-index: 5;
-}
-
-.skills::-webkit-scrollbar-track {
-  background-color: transparent;
-  z-index: 5;
-}
-
-.skills::-webkit-scrollbar-thumb {
-  background-color: #32513C;
-  border-radius: 20px;
-  border: 3px solid black;
-  z-index: 5;
-}
-
 .nav-bar {
   padding-top: 15px;
   background-color: #0b160c;
@@ -142,24 +125,36 @@ body::-webkit-scrollbar {
   margin-right: auto;
 }
 
+.skills::-webkit-scrollbar {
+  width: 20px;
+  z-index: 5;
+}
+
+.skills::-webkit-scrollbar-track {
+  background-color: transparent;
+  z-index: 5;
+}
+
+.skills::-webkit-scrollbar-thumb {
+  background-color: #32513C;
+  border-radius: 20px;
+  border: 2px solid black;
+  z-index: 5;
+}
+
 .pie {
-  --b:7px;
+  --b:9px;  /* change this to change the thickness of the circles */
   display: inline-grid;
-  width: 75px;
+  width: 100px;
   aspect-ratio: 1; /* so I only have to change one number if I want to change the size */
   border-radius: 50%;  /* makes the shape a circle >50. 25 makes a rounded square */
   background-image: conic-gradient(transparent var(--d), #32513C 0);  /* fills clockwise */
-  margin: 5px;
+  margin: 8px;
   border-width: 10px;
   border: #0b160c;
   place-content: center;
   -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
     mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
-  text-shadow:
-      -1px -1px 0 #0b160c,
-      1px -1px 0 #0b160c,
-      -1px 1px 0 #0b160c,
-      1px 1px 0 #0b160c;
 }
 
 .contact-me p {
