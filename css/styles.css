@@ -34,6 +34,8 @@ h4 {font-family: 'Lato', sans-serif; color: #506f5a;}
 h5 {font-family: 'Lato', sans-serif; color: #506f5a;}
 h6 {font-family: 'Lato', sans-serif; color: #506f5a;}
 
+a {text-decoration: none; color: #C7D1CA;}
+
 
 /*****************************CLASS SELECTORS*****************************/
 
@@ -69,8 +71,6 @@ body::-webkit-scrollbar {
 .nav-bar a {
   display: inline block;
   padding: 18px 16px;
-  text-decoration: none;
-  color: #C7D1CA;
 }
 
 .nav-bar a:hover {
@@ -142,12 +142,21 @@ body::-webkit-scrollbar {
 
 .skills {
   overflow-x: auto;
+  
 }
 
 .skills table {
   margin-left: auto;
   margin-right: auto;
-  font-size: larger;
+  padding: 0;
+  text-align: center;
+}
+
+.label p {
+  margin: 0;
+  line-height: 300%;
+  text-align: center top;
+  font-size: 100%;
 }
 
 .skills::-webkit-scrollbar {
@@ -171,14 +180,19 @@ body::-webkit-scrollbar {
   display: inline;
 }
 
+.bottom-container {
+  margin-top: 20px;
+}
+
 .bottom-container a {
-  color: #DE7852;
+  color: #0b160c;
+  padding: 10px;
+  margin: 5px;
 }
 
-.bottom-container a:visited {
-  color: #506f5a;
+.bottom-container a:hover {
+  background-color: #506f5a;
 }
-
 
 /*******************************ID SELECTORS*******************************/
 
