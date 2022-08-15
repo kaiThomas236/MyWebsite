@@ -75,6 +75,7 @@ body::-webkit-scrollbar {
 
 .nav-bar a:hover {
   background-color: #000;
+  border-radius: 10px;
 }
 
 .top-container {
@@ -192,6 +193,7 @@ body::-webkit-scrollbar {
 
 .bottom-container a:hover {
   background-color: #506f5a;
+  border-radius: 10px;
 }
 
 /*******************************ID SELECTORS*******************************/
