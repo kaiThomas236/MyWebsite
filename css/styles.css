@@ -49,7 +49,7 @@ body::-webkit-scrollbar {
   padding-top: 15px;
   background-color: #0b160c;
   opacity: 100%;
-  height: 38px;
+  height: 55px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -69,6 +69,7 @@ body::-webkit-scrollbar {
 }
 
 .nav-bar a {
+  color: #C7D1CA;
   display: inline block;
   padding: 18px 16px;
 }
@@ -142,16 +143,13 @@ body::-webkit-scrollbar {
 }
 
 .skills {
-  overflow-x: auto;
-  
-}
-
-.skills table {
+  /* overflow-x: auto; */
   margin-left: auto;
   margin-right: auto;
   padding: 0;
   text-align: center;
 }
+
 
 .label p {
   margin: 0;
@@ -160,7 +158,9 @@ body::-webkit-scrollbar {
   font-size: 100%;
 }
 
-.skills::-webkit-scrollbar {
+/*HORIZONTAL SCROLLBAR*/
+
+/* .skills::-webkit-scrollbar {
   width: 20px;
   z-index: 5;
 }
@@ -175,7 +175,7 @@ body::-webkit-scrollbar {
   border-radius: 20px;
   border: 2px solid black;
   z-index: 5;
-}
+} */
 
 .contact-me p {
   display: inline;

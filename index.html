@@ -8,16 +8,24 @@
 <head>
   <meta charset="utf-8">
   <title>Kai Thomas</title>
+  
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Lato&family=Lora&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <div class="nav-bar">
+
+  <!-- TODO: MAKE NAVBAR RESPONSIVE -->
+  <div class="nav-bar">  
     <ul>
       <li><a href="/">Home</a></li> <!-- works on the external site, but not on the local. keeps the home page URL from including "index.html" -->
       <li><a href="pages/qualifications.html">Qualifications</a></li>
@@ -43,9 +51,39 @@
     </div>
     <hr>
     <div>
-      <h2>My Skills</h2>
-      <div class="skills">
-        <table> 
+      
+      <div class="skills container text-center">
+        <h2>My Skills</h2>
+        <div class="row">
+          <div class="col-sm">
+            <div class="pie" style="--d:10deg"></div>
+            <p>Python</p>
+          </div>
+          <div class="col-sm">
+            <div class="pie" style="--d:30deg"></div>
+            <p>HTML</p>
+          </div>
+          <div class="col-sm">
+            <div class="pie" style="--d:75deg"></div>
+            <p>SQL</p>
+          </div>
+          <div class="col-sm">
+            <div class="pie" style="--d:100deg"></div>
+            <p>CSS</p>
+          </div>
+          <div class="col-sm">
+            <div class="pie" style="--d:145deg"></div>
+            <p>GoLang</p>
+          </div>
+          <div class="col-sm">
+            <div class="pie" style="--d:215deg"></div>
+            <p>JS</p>
+          </div>
+        </div>
+
+        
+        
+        <!-- <table> 
           
           <tr>
             <td><div class="pie" style="--d:10deg"></div></td>
@@ -67,7 +105,7 @@
             
           </tr>
 
-        </table>
+        </table> -->
       </div>
     </div>
     
