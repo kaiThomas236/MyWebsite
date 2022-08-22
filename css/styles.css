@@ -7,6 +7,18 @@ font-family: 'Lato', sans-serif;
 font-family: 'Lora',serif;
 */
 
+
+
+@media  (max-width: 700px) {
+  p { 
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+
 /******************************TAG SELECTORS******************************/
 
 body {
