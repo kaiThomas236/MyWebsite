@@ -10,7 +10,7 @@ font-family: 'Lora',serif;
 
 /*******************************MEDIA QUERIES*******************************/
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   p {
     font-size: 1.5rem;
   }
@@ -18,6 +18,16 @@ font-family: 'Lora',serif;
   h2 {
     font-size: 3rem;
   }
+}
+
+@media screen and (max-width: 700px) {
+  p {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 3rem;
+    }
 }
 
 /******************************TAG SELECTORS******************************/
