@@ -160,7 +160,7 @@ a {text-decoration: none; color: #C7D1CA;}
 }
 
 .skills {
-  /* overflow-x: auto; */
+  overflow-x: auto;
   padding-bottom: 10px;
   text-align: center;
 }
