@@ -18,12 +18,14 @@ font-family: 'Lora',serif;
       transform-origin: top left;
       transform: scale(50%);
     }
-    p {
-      font-size: 2rem;
-    }
-    h2 {
-      font-size: 3rem;
-    }
+  p {
+    font-size: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  h2 {
+    font-size: 3rem;
+  }
 } 
 
 /******************************TAG SELECTORS******************************/
@@ -159,8 +161,7 @@ a {text-decoration: none; color: #C7D1CA;}
 
 .skills {
   /* overflow-x: auto; */
-  margin: 0 auto 0;
-  padding: 0 0 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -170,16 +171,9 @@ a {text-decoration: none; color: #C7D1CA;}
 }
 
 
-.label p {
-  margin: 0;
-  line-height: 300%;
-  text-align: center top;
-  font-size: 100%;
-}
 
-.contact-me p {
-  display: inline;
-}
+
+
 
 .bottom-container {
   background-color: #506f5a;
@@ -191,7 +185,7 @@ a {text-decoration: none; color: #C7D1CA;}
 .bottom-container a {
   color: #C7D1CA;
   padding: 10px;
-  margin: 5px;
+  margin: 5px 0;
 }
 
 .bottom-container p {
