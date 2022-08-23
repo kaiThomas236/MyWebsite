@@ -33,7 +33,8 @@ body {
   margin: 0;
   font-family: 'Lora', serif;
   text-align: center;
-  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 
@@ -59,7 +60,7 @@ a {text-decoration: none; color: #C7D1CA;}
 
 /*****************************CLASS SELECTORS*****************************/
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
   display: none;
