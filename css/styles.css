@@ -10,25 +10,21 @@ font-family: 'Lora',serif;
 
 /*******************************MEDIA QUERIES*******************************/
 
-@media screen and (max-width: 1100px) {
-  p {
-    font-size: 1.5rem;
-  }
 
-  h2 {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  p {
+@media screen and (max-width: 450px) {
+  body {
+      width: 200%;
+      height: 200%;
+      transform-origin: top left;
+      transform: scale(50%);
+    }
+    p {
       font-size: 2rem;
     }
-  
     h2 {
       font-size: 3rem;
     }
-}
+} 
 
 /******************************TAG SELECTORS******************************/
 
@@ -96,6 +92,7 @@ body::-webkit-scrollbar {
 }
 
 .top-container {
+  /* min-height: 205px; */
   background-image: url("../images/website-bg.png");
   background-repeat: no-repeat;
   background-position: center top;
