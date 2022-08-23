@@ -8,16 +8,17 @@ font-family: 'Lora',serif;
 */
 
 
+/*******************************MEDIA QUERIES*******************************/
 
-@media  (max-width: 700px) {
-  p { 
-    font-size: 2rem;
+@media (max-width: 1100px) {
+  p {
+    font-size: 1.5rem;
   }
+
   h2 {
     font-size: 3rem;
   }
 }
-
 
 /******************************TAG SELECTORS******************************/
 
@@ -203,3 +204,4 @@ body::-webkit-scrollbar {
   visibility: hidden;
 
 }
+
