@@ -10,6 +10,11 @@ font-family: 'Lora',serif;
 
 /*******************************MEDIA QUERIES*******************************/
 
+@media screen and (max-width: 991px) {
+  .nav-bar a {
+    line-height: 4rem;
+  }
+}
 
 @media screen and (max-width: 450px) {
   body {
@@ -18,17 +23,33 @@ font-family: 'Lora',serif;
       transform-origin: top left;
       transform: scale(50%);
     }
+  html {
+    height: 0;
+  }
   p {
     font-size: 2rem;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  a {
+    font-size: 2rem;
   }
   h2 {
     font-size: 3rem;
   }
 } 
 
+@media screen and (min-width: 450px) {
+  p {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+
+
 /******************************TAG SELECTORS******************************/
+
 
 body {
   background-color: #C7D1CA;
@@ -95,7 +116,6 @@ a {text-decoration: none; color: #C7D1CA;}
 }
 
 .top-container {
-  /* min-height: 205px; */
   background-image: url("../images/website-bg.png");
   background-repeat: no-repeat;
   background-position: center top;
@@ -113,7 +133,7 @@ a {text-decoration: none; color: #C7D1CA;}
   position: relative;
 }
 
-.title {  /*  text over transparent image over bg  */
+.title {  
   position: absolute;
   top: 0;
   width: 100%;
@@ -130,15 +150,11 @@ a {text-decoration: none; color: #C7D1CA;}
 .title h2 {
   padding: 0;
   margin: 0;
-  font-size: 40px; /*  25px desired size, 16px == 100%, 25/16=1.562, 156.2%  */
+  font-size: 40px; 
   color: #C7D1CA;
   font-weight: lighter;
 }
 
-.profile p {
-  margin-left: 2%;
-  margin-right: 2%;
-}
 
 .pie {
   --b: 9px;
