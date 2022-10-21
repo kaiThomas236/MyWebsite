@@ -1,0 +1,242 @@
+/******************************THEME DETAILS******************************/
+
+/*  #DE7852  #0b160c  #32513C  #506f5a  #C7D1CA  #F0F2F1  */
+/*
+font-family: 'Euphoria Script', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Lora',serif;
+*/
+
+/******************************TAG SELECTORS******************************/
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #C7D1CA;
+    margin: 0;
+    font-family: 'Lora', serif;
+    text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    
+}
+
+
+
+hr {
+    margin: 0 auto 15px;
+    border-color: #32513C;
+    border-style: none;
+    border-top-style: solid;
+    border-width: 1px;
+    width: 5%;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+h2,
+h3 {
+    font-family: 'Lato', sans-serif;
+    color: #32513C;
+}
+
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    color: #506f5a;
+}
+
+a {
+    text-decoration: none;
+    color: #C7D1CA;
+}
+
+/*****************************CLASS SELECTORS*****************************/
+
+::-webkit-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: none;
+}
+
+.nav-container {
+    background-image: url("images/nav-bg.png");
+    padding: .5% 2% .5% 0;
+    min-height: 100%;
+    height: auto;
+}
+
+.nav-bar {
+    opacity: 100%;
+}
+
+.navbar-brand {
+    padding-top: 10px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+
+}
+
+.nav-bar a {
+    color: #C7D1CA;
+    padding: 14px 12px;
+    border-radius: 15px;
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a.active {
+    background-color: #000;
+    border-radius: 14px;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.title h1 {
+    margin: 0;
+    font-family: 'Euphoria Script', cursive;
+    font-size: 130px;
+    padding-top: 30px;
+}
+
+.title h2 {
+    padding: 0;
+    padding-top: 30px;
+    margin: 0;
+    font-size: 40px;
+    color: #C7D1CA;
+    font-weight: lighter;
+}
+
+.skill-icons {
+    color: #32513C;
+    font-size: 4rem;
+    margin-top: 10%;
+}
+
+.contact p {
+    margin-bottom: 0;
+}
+
+.bottom-container {
+    background-color: #506f5a;
+    color: #C7D1CA;
+    padding: 9px 0 7px;
+}
+
+.bottom-container a {
+    color: #C7D1CA;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.bottom-container p {
+    margin: 7px auto 0
+}
+
+.bottom-container a:hover {
+    background-color: #32513C;
+    border-radius: 10px;
+}
+
+/*******************************ID SELECTORS*******************************/
+
+#home {
+    color: #C7D1CA;
+    text-shadow:
+    -1px -1px 0 #0b160c,
+    1px -1px 0 #0b160c,
+    -1px 1px 0 #0b160c,
+    1px 1px 0 #0b160c;
+    text-align: center;
+    position: relative;
+    padding-top: 55px; /* keeps content below (not behind) sticky navbar */
+    margin-top: -55px; /* keeps content below (not behind) sticky navbar */
+    
+}
+
+#skills {
+    overflow-x: auto;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#skills p {
+    margin: 0 auto 7px;
+    padding: 0 0 10px;
+}
+
+/******************************MEDIA QUERIES******************************/
+
+@media screen and (max-width: 991px) {
+    .nav-bar a {
+        line-height: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        width: 200%;
+        height: 200%;
+        transform-origin: top left;
+        transform: scale(50%);
+    }
+
+    html {
+        height: 0;
+    }
+
+    p {
+        font-size: 2rem;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 3.25rem;
+    }
+
+    .skill-icons {
+        font-size: 7rem;
+    }
+
+    .title h1 {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    p {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
