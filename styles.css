@@ -153,10 +153,20 @@ footer .section-box {
     color: var(--text-color);
 }
 
-.navbar-brand p {
+.navbar-brand {
     color: var(--text-color);
     padding: 0;
     margin: 0;
+    --bs-navbar-brand-color: var(--text-color);
+    --bs-navbar-brand-hover-color: var(--accent-color);
+    transition: all .15s ease-in-out;
+} 
+
+.dropdown:hover,
+.dropdown:focus,
+.dropdown:active,
+.dropdown:after {
+    color: var(--accent-color);
 }
 
 .dropdown-menu {
@@ -178,7 +188,7 @@ footer .section-box {
 
 .title {
     position: absolute;
-    bottom: 15%;
+    top: 10%;
     left: 0;
     right: 0;
 }
@@ -198,11 +208,23 @@ footer .section-box {
 
 /* skills */
 
+.soft-skill-icons {
+    font-size: 2rem;
+    color: var(--accent-color);
+    -webkit-text-stroke-width: .35px;
+    -webkit-text-stroke-color: var(--text-color);
+    position: relative;
+    top: 5px;
+}
+
+
+
 .skill-icons {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--accent-color);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--text-color);
+    
 }
 
 /* qualifications */
@@ -217,6 +239,7 @@ footer .section-box {
     color: var(--text-color);
     padding: 8px;
     margin: 2px;
+    
     border-radius: 15px;
     border: solid;
     border-width: 1px;
@@ -247,5 +270,11 @@ footer .section-box {
 /*******************************ID SELECTORS*******************************/
 
 
+
 /******************************MEDIA QUERIES******************************/
 
+@media screen and (max-width: 500px) {
+    #contact .section-box {
+        padding-bottom: 6%;
+    }
+}
