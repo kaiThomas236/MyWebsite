@@ -199,19 +199,24 @@ footer .section-box {
 /* skills */
 
 .skill-icons {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
+    color: var(--accent-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color);
 }
 
 /* qualifications */
 
 /* contact */
+.contact-text {
+    margin-bottom: 25px;
+}
 
-/* footer */
-
-.footer-link {
+.contact-link {
     text-decoration: none;
     color: var(--text-color);
     padding: 8px;
+    margin: 2px;
     border-radius: 15px;
     border: solid;
     border-width: 1px;
@@ -220,10 +225,10 @@ footer .section-box {
     transition: all .15s ease-in-out;
 }
 
-.footer-link:hover,
-.footer-link:focus,
-.footer-link:active,
-.footer-link:after {
+.contact-link:hover,
+.contact-link:focus,
+.contact-link:active,
+.contact-link:after {
     color: var(--text-color);
     background-color: transparent;
     border-color: var(--text-color);
@@ -231,8 +236,11 @@ footer .section-box {
 
 }
 
+/* footer */
+
+
+
 .footer-p {
-    margin-top: 1.5%;
     margin-bottom: 0;
 }
 
