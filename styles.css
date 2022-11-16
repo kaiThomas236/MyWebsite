@@ -1,5 +1,106 @@
 /******************************THEME DETAILS******************************/
 
+:root:has(#dark:checked) {
+    --home-image: url("images/clay-banks-u27Rrbs9Dwc-unsplash.jpg");
+    --bg-color-1: #2B2B2B;
+    --bg-color-2: #423F3E;
+    --bg-color-3: #171010;
+    --accent-color: #452323;
+    --text-color: white;
+}
+.dark {
+    --home-image: url("images/clay-banks-u27Rrbs9Dwc-unsplash.jpg");
+    --bg-color-1: #2B2B2B;
+    --bg-color-2: #423F3E;
+    --bg-color-3: #171010;
+    --accent-color: #452323;
+    --text-color: white;
+}
+
+:root:has(#light:checked) {
+    --home-image: url("images/andrey-bond-S_O16COE6gU-unsplash.jpg");
+    --bg-color-1: #EEEEEE;
+    --bg-color-2: #FFFFFF;
+    --bg-color-3: #A2A2A2;
+    --accent-color: #FFE0D4;
+    --text-color: black;
+}
+.light {
+    --home-image: url("images/andrey-bond-S_O16COE6gU-unsplash.jpg");
+    --bg-color-1: #EEEEEE;
+    --bg-color-2: #FFFFFF;
+    --bg-color-3: #A2A2A2;
+    --accent-color: #FFE0D4;
+    --text-color: black;
+}
+
+:root:has(#darkblue:checked) {
+    --home-image: url("images/noaa-P3qllUbhOII-unsplash.jpg");
+    --bg-color-1: #0A1147;
+    --bg-color-2: #121F53;
+    --bg-color-3: #01002E;
+    --accent-color: #005164;
+    --text-color: white;
+}
+.darkblue {
+    --home-image: url("images/noaa-P3qllUbhOII-unsplash.jpg");
+    --bg-color-1: #0A1147;
+    --bg-color-2: #121F53;
+    --bg-color-3: #01002E;
+    --accent-color: #005164;
+    --text-color: white;
+}
+
+:root:has(#lightblue:checked) {
+    --home-image: url("images/gabriel-castles-7LsQ6qEbJ64-unsplash.jpg");
+    --bg-color-1: #D0E4F1;
+    --bg-color-2: #EFF6FA;
+    --bg-color-3: #8FB4D8;
+    --accent-color: #F3E9BD;
+    --text-color: black;
+}
+.lightblue {
+    --home-image: url("images/gabriel-castles-7LsQ6qEbJ64-unsplash.jpg");
+    --bg-color-1: #D0E4F1;
+    --bg-color-2: #EFF6FA;
+    --bg-color-3: #8FB4D8;
+    --accent-color: #F3E9BD;
+    --text-color: black;
+}
+
+:root:has(#orange:checked) {
+    --home-image: url("images/katie-hafner-uaxSS_HseXY-unsplash.jpg");
+    --bg-color-1: #FFC588;
+    --bg-color-2: #FFDFB2;
+    --bg-color-3: #FF9840;
+    --accent-color: #92D1BE;
+    --text-color: black;
+}
+.orange {
+    --home-image: url("images/katie-hafner-uaxSS_HseXY-unsplash.jpg");
+    --bg-color-1: #FFC588;
+    --bg-color-2: #FFDFB2;
+    --bg-color-3: #FF9840;
+    --accent-color: #92D1BE;
+    --text-color: black;
+}
+
+:root:has(#green:checked) {
+    --home-image: url("images/andrew-coelho-aL7SA1ASVdQ-unsplash.jpg");
+    --bg-color-1: #194418;
+    --bg-color-2: #2D6228;
+    --bg-color-3: #092705;
+    --accent-color: #516417;
+    --text-color: white;
+}
+.green {
+    --home-image: url("images/andrew-coelho-aL7SA1ASVdQ-unsplash.jpg");
+    --bg-color-1: #194418;
+    --bg-color-2: #2D6228;
+    --bg-color-3: #092705;
+    --accent-color: #516417;
+    --text-color: white;
+}
 
 /******************************TAG SELECTORS******************************/
 
@@ -88,59 +189,7 @@ footer .section-box {
     border-radius: 15px;
 }
 
-:root:has(#dark:checked) {
-    --home-image: url("images/clay-banks-u27Rrbs9Dwc-unsplash.jpg");
-    --bg-color-1: #2B2B2B;
-    --bg-color-2: #423F3E;
-    --bg-color-3: #171010;
-    --accent-color: #452323;
-    --text-color: white;
-}
 
-:root:has(#light:checked) {
-    --home-image: url("images/andrey-bond-S_O16COE6gU-unsplash.jpg");
-    --bg-color-1: #EEEEEE;
-    --bg-color-2: #FFFFFF;
-    --bg-color-3: #A2A2A2;
-    --accent-color: #FFE0D4;
-    --text-color: black;
-}
-
-:root:has(#darkblue:checked) {
-    --home-image: url("images/noaa-P3qllUbhOII-unsplash.jpg");
-    --bg-color-1: #0A1147;
-    --bg-color-2: #121F53;
-    --bg-color-3: #01002E;
-    --accent-color: #005164;
-    --text-color: white;
-}
-
-:root:has(#lightblue:checked) {
-    --home-image: url("images/gabriel-castles-7LsQ6qEbJ64-unsplash.jpg");
-    --bg-color-1: #D0E4F1;
-    --bg-color-2: #EFF6FA;
-    --bg-color-3: #8FB4D8;
-    --accent-color: #F3E9BD;
-    --text-color: black;
-}
-
-:root:has(#orange:checked) {
-    --home-image: url("images/katie-hafner-uaxSS_HseXY-unsplash.jpg");
-    --bg-color-1: #FFC588;
-    --bg-color-2: #FFDFB2;
-    --bg-color-3: #FF9840;
-    --accent-color: #92D1BE;
-    --text-color: black;
-}
-
-:root:has(#green:checked) {
-    --home-image: url("images/andrew-coelho-aL7SA1ASVdQ-unsplash.jpg");
-    --bg-color-1: #194418;
-    --bg-color-2: #2D6228;
-    --bg-color-3: #092705;
-    --accent-color: #516417;
-    --text-color: white;
-}
 
 /* navbar */
 
@@ -220,7 +269,7 @@ footer .section-box {
 
 
 .skill-icons {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--accent-color);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--text-color);
