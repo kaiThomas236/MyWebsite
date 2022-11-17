@@ -326,4 +326,7 @@ footer .section-box {
     #contact .section-box {
         padding-bottom: 6%;
     }
+    h1 {
+        font-size: 2.5rem;
+    }
 }
