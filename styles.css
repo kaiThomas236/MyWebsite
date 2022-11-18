@@ -228,11 +228,12 @@ footer .section-box {
 .imgbox {
     background-image: var(--home-image);
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
+    max-height: 95vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    text-align: center;
 }
 
 .title {
@@ -241,6 +242,37 @@ footer .section-box {
     left: 0;
     right: 0;
 }
+
+.scroll {
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    right: 0;
+    color: var(--text-color);
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.scroll:hover,
+.scroll:focus,
+.scroll:active,
+.scroll:after {
+    color: var(--text-color);
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 20px, 0);
+    }
+}
+
 
 /* about */
 
