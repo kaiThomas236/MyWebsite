@@ -35,19 +35,19 @@
 }
 
 :root:has(#darkblue:checked) {
-    --home-image: url("images/noaa-P3qllUbhOII-unsplash.jpg");
-    --bg-color-1: #0A1147;
-    --bg-color-2: #121F53;
-    --bg-color-3: #01002E;
-    --accent-color: #005164;
+    --home-image: url("images/kier-in-sight-O7srvV2piu0-unsplash.jpg");
+    --bg-color-1: #122033;
+    --bg-color-2: #20364C;
+    --bg-color-3: #0B0F1A;
+    --accent-color: #526F6A;
     --text-color: white;
 }
 .darkblue {
-    --home-image: url("images/noaa-P3qllUbhOII-unsplash.jpg");
-    --bg-color-1: #0A1147;
-    --bg-color-2: #121F53;
-    --bg-color-3: #01002E;
-    --accent-color: #005164;
+    --home-image: url("images/kier-in-sight-O7srvV2piu0-unsplash.jpg");
+    --bg-color-1: #122033;
+    --bg-color-2: #20364C;
+    --bg-color-3: #0B0F1A;
+    --accent-color: #526F6A;
     --text-color: white;
 }
 
@@ -86,19 +86,19 @@
 }
 
 :root:has(#green:checked) {
-    --home-image: url("images/andrew-coelho-aL7SA1ASVdQ-unsplash.jpg");
-    --bg-color-1: #194418;
-    --bg-color-2: #2D6228;
-    --bg-color-3: #092705;
-    --accent-color: #516417;
+    --home-image: url("images/jonatan-pie-EvKBHBGgaUo-unsplash.jpg");
+    --bg-color-1: #1F4014;
+    --bg-color-2: #38621E;
+    --bg-color-3: #061C0A;
+    --accent-color: #A44B10;
     --text-color: white;
 }
 .green {
-    --home-image: url("images/andrew-coelho-aL7SA1ASVdQ-unsplash.jpg");
-    --bg-color-1: #194418;
-    --bg-color-2: #2D6228;
-    --bg-color-3: #092705;
-    --accent-color: #516417;
+    --home-image: url("images/jonatan-pie-EvKBHBGgaUo-unsplash.jpg");
+    --bg-color-1: #1F4014;
+    --bg-color-2: #38621E;
+    --bg-color-3: #061C0A;
+    --accent-color: #A44B10;
     --text-color: white;
 }
 
