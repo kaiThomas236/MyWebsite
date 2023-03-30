@@ -85,7 +85,7 @@
     --text-color: black;
 }
 
-:root:has(#green:checked) {
+/* :root:has(#green:checked) {
     --home-image: url("images/jonatan-pie-EvKBHBGgaUo-unsplash.jpg");
     --bg-color-1: #1F4014;
     --bg-color-2: #38621E;
@@ -100,7 +100,7 @@
     --bg-color-3: #061C0A;
     --accent-color: #A44B10;
     --text-color: white;
-}
+} */
 
 /******************************TAG SELECTORS******************************/
 
